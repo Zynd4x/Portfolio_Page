@@ -4,18 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <header>
-        <img>
-        <h1>Nick Filbert</h1>
-        
-    </header>
-    <main>
+    <div class="page">
+        <header class="header">
+            <div class="img-head-container">
+                <div class="header-content">
+                    <img class="header-image" src="https://www.citeq.de/fileadmin/user_upload/citeq.de/panorama/pics/headerslider/Stadt-Muenster_Citeq_Internet_Header_Ausbildung_1.jpg" alt="Header Image">
+                    <div class="header-text">
+                        <h1>Nick Filbert - FISI</h1>
+                        <h2>Projekte - Techniken - Selbstentwicklung</h2>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <a href="index.html">Startseite</a>
+                        <a href="projekte.html">Projekte</a>
+                        <a href="techniken.html">Techniken</a>
+                        <a href="selbstentwicklung.html">Selbstentwicklung</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-inner">
+                <div class="einführung">
+                    <h3 class="einführungsTitel">Der weg zum Ziel</h3>
+                    <p>Im Folgenden präsentiere ich meine bisherigen Projekte, die ich im Rahmen meiner Ausbildung und Selbstentwicklung umgesetzt habe.
+                        Schon in frühen Jahren habe ich mich sehr für die Technik interessiert, was sich durch starkem Interesse an Technischen Problembehandlungen- bzw lösungen auzeichnete.
+                        Durch erste erfahrungen des PCs auseinanderbauen und wieder zusammensetzten sowie erste kleine Programmierungen und Shell/CMD Commands, hat sich da das Feuer in mir entfacht und die Leidenschafft ist geboren.
+                        Nach langen Jahren des nichttrauens und der hingabe zu einem "einfacheren Job", habe ich mich 2026 dafür entschieden den ersten Schritt in richtung meines Traumberufes Fachinformatiker zu machen...
+                    </p>
+                    <button onclick="window.location.href='selbstentwicklung.html'">Weiter lesen...</button>
+                </div>
+                <h4 class="projectTitel">Meine Projekte</h4>
+                <svg width="0" height="0">
+                    <filter id="lg">
+                        <feTurbulence type="fractalNoise" baseFrequency="0" />
+                        <feDisplacementMap in="SourceGraphic" in2="n" />
+                    </filter>
+                </svg>
+                <div class="project-grid">
+                    <!-- crossorigin="anonymous" wird benötigt um die Bildpunkte per Canvas auszulesen -->
+                    <div class="project-collect">
+                        <div class="project-card">
+                            <h5 class="subTitel">Linktree like Link-Karte</h5>
+                            <div class="img-container"><img class="image" id="image" crossorigin="anonymous" src="Link-Karte.png" alt="Projekt 1"></div>
+                            <p>Ich habe über eine Challenge von Frontend Mentor eine Linktree ähnliche Link-Karte erstellt.</p>
+                        </div>
+                        <div class="project-card">
+                            <h5 class="subTitel">Spotify Clone</h5>
+                            <img class="image clone" id="image" crossorigin="anonymous" src="Spotify-clone.png" alt="Projekt 2">
+                            <p>Das ist der versuche eine Spotify-ähnliche Anwendung zu erstellen die die Funktionen von Spotify so ähnlichen sein sollen wie möglich, um so die ganze dynamik dahinter besser zu verstehen und umzusetzten.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h5 class="subTitel">SignUp/Login</h5>
+                        <img style="margin-right: 80px;" class="image" id="image" crossorigin="anonymous" src="Signup.png" alt="Projekt 3">
+                        <img class="image" id="image" crossorigin="anonymous" src="Login.png" alt="Projekt 3">
+                        <p>Ein einfaches SignUp- und Login-System, das mit HTML, CSS und JavaScript implementiert wurde. Dabei baue ich einen Server von grundauf auf, mit authRoutes, authMiddleware, authController und vieles was noch dazu kommt. Das ganze ist noch in der Aufbauphase.</p>
+                    </div>
+                    <div class="modal" id="imageModal">
+                        <span class="arrow-btn prev-btn" id="prevBtn">&#10094;</span>
+                        <img class="modal-content" id="imgFullscreen">
+                        <span class="arrow-btn next-btn" id="nextBtn">&#10095;</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
 
-    </main>
-    <footer>
-        <p>&copy; 2026 Meine Portfolio-Seite. Alle Rechte vorbehalten.</p>
-    </footer>
+        </aside>
+        <footer>
+            <p>&copy; 2026 Meine Portfolio-Seite. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
 </body>
 </html>

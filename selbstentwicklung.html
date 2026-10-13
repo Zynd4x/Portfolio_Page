@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(192, 128, 141);
+        }
+
+        .glass {
+            width: 320px;
+            height: 200px;
+            border-radius: 24px;
+            backdrop-filter: url(#lg) blur(3px) saturate(180%);
+            box-shadow: inset 0 1px 0 #ffffff5c;
+        }
+
+        @property --a {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        @keyframes spin { to { --a: 360deg; } }
+
+        .card {
+            position: relative;
+            width: 320px;
+            border-radius: 16px;
+            height: 320px;
+                   }
+        
+        .card::after {
+            content: "";
+            position: absolute;
+            inset: -4px;
+            border-radius: inherit;
+            background: conic-gradient(from var(--a), green, yellow);
+            animation: spin 10s linear infinite;
+            z-index: -1;
+        }
+
+        img {
+            width: inherit;
+            border-radius: inherit;
+        }
+        </style>
+
+    <svg width="0" height="0">
+        <filter id="lg">
+            <feTurbulence type="fractalNoise" baseFrequency="0" />
+            <feDisplacementMap in="SourceGraphic" in2="n" />
+        </filter>
+    </svg>
+
+<div class="glass"></div>
+<div class="card">
+    <img src="Login.png" alt="">
+</div>
+</body>
+</html>
