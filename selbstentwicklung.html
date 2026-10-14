@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="height: 1000vh;">
     <style>
         body {
             background-color: rgb(192, 128, 141);
@@ -48,6 +48,14 @@
             width: inherit;
             border-radius: inherit;
         }
+
+        .main-nav {
+            position: sticky;
+            top: 0; /* Bestimmt, ab welchem Abstand zum oberen Bildschirmrand es kleben bleibt */
+            z-index: 1000; /* Wichtig: Damit die Navi immer über dem normalen Content liegt */
+            background-color: #ffffff; /* Hintergrundfarbe, damit der Text dahinter unsichtbar wird */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ein dezenter Schatten für optische Tiefe */
+}
         </style>
 
     <svg width="0" height="0">
@@ -61,5 +69,13 @@
 <div class="card">
     <img src="Login.png" alt="">
 </div>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="#home">Start</a></li>
+    <li><a href="#about">Über mich</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+</nav>
 </body>
 </html>

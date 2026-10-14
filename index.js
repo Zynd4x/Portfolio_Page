@@ -6,6 +6,10 @@ const nextBtn = document.getElementById('nextBtn');
 const images = document.querySelectorAll('.image');
 let currentIndex = 0;
 
+
+
+
+
 // Funktion fürs Öffnen des Modals mit bestimmten Index
 function openModal(index) {
     currentIndex = index;
