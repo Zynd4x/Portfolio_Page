@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio von Nick Filbert - Angehender Fachinformatiker für Systemintegration (FISI). Projekte, Skills und Entwicklung.">
+    <title>Nick Filbert | Portfolio & Blog</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="projekte.js" defer></script>
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- HEADER -->
+        <header class="hero-header hero-subpage">
+            <div class="hero-overlay"></div>
+            <img class="hero-bg" src="https://www.citeq.de/fileadmin/user_upload/citeq.de/panorama/pics/headerslider/Stadt-Muenster_Citeq_Internet_Header_Ausbildung_1.jpg" alt="Header Banner">
+            <div class="hero-content">
+                <span class="badge">Skills & Tools</span>
+                <h1>Techniken & Workfolws</h1>
+                <p>Werkzeuge, Sprachen und Frameworks, mit denen ich arbeite</p>
+            </div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar" aria-label="Hauptnavigation">
+            <div class="nav-container">
+                <a href="index_new-2.html" class="nav-logo">&lt;NF /&gt;</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="projekte.html">Projekte</a></li>
+                    <li><a href="techniken.html" class="active">Techniken</a></li>
+                    <li><a href="selbstentwicklung.html">Selbstentwicklung</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MAIN LAYOUT (GRID: MAIN + ASIDE) -->
+        <div class="content-wrapper">
+            <main class="main-content">
+                <!-- EINFÜHRUNG -->
+                <section class="intro-card">
+                    <h2 class="section-title">Der Weg zum Ziel</h2>
+                    <p class="intro-lead">
+                        Hi, ich bin Nick – schön, dass du da bist! Willkommen auf meiner Portfolio-Webseite. Hier nehme ich dich mit auf meine Reise durch die IT-Welt und teile meine Projekte, Techniken und persönliche Weiterentwicklung.
+                    </p>
+                    <div class="story-block">
+                        <h3>Ein paar Worte zu mir</h3>
+                        <p>
+                            Ich bin Nick Filbert, gelernter Industriemechaniker und zum Zeitpunkt (21.10.2026) 29 Jahre jung. Schon früh hat mich Technik fasziniert – besonders die Frage, wie man technische Probleme löst. Als ich damals meinen ersten PC auseinandergebaut, wieder zusammengesetzt und erste Shell- sowie CMD-Befehle ausprobiert habe, war die Leidenschaft für die IT entfacht.
+                        </p>
+                        <p>
+                            Nach einigen Jahren im gewohnten Job habe ich 2026 schließlich den Entschluss gefasst, meinen eigentlichen Traumberuf anzugehen: Den Start meiner Ausbildung zum <strong>Fachinformatiker</strong>.
+                        </p>
+                    </div>
+                    <a href="selbstentwicklung.html" class="btn-primary">Weiterlesen &rarr;</a>
+                </section>
+
+                <!-- PROJEKTE GALERIE -->
+                <section class="projects-section">
+                    <h2 class="section-title">Meine bisherigen Projekte</h2>
+                    <p class="section-subtitle">Klicke auf ein Bild, um die Galerie-Vorschau zu öffnen. (Nutze `←` und `→` zum Blättern)</p>
+
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="image-wrapper">
+                                <img class="gallery-img" src="Link-Karte.png" alt="Linktree-ähnliche Link-Karte" data-index="0">
+                                <div class="overlay"><span class="zoom-icon">&#128065; Vergrößern</span></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Link-Karte</h3>
+                                <p>Frontend Mentor Challenge: Eine stylische Linktree-Alternative zur Verlinkung aller Social-Media-Kanäle.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="image-wrapper">
+                                <img class="gallery-img" src="Spotify-clone.png" alt="Spotify Clone Webapp" data-index="1">
+                                <div class="overlay"><span class="zoom-icon">&#128065; Vergrößern</span></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Spotify Clone</h3>
+                                <p>Versuch einer Spotify-ähnlichen Anwendung zur Vertiefung von dynamischen UIs und Audiosteuerung.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="image-wrapper">
+                                <img class="gallery-img" src="Signup.png" alt="SignUp System Screen" data-index="2">
+                                <div class="overlay"><span class="zoom-icon">&#128065; Vergrößern</span></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>SignUp System</h3>
+                                <p>Authentifizierungssystem mit custom Node.js Server, Routes und Controllers (in Entwicklung).</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="image-wrapper">
+                                <img class="gallery-img" src="Login.png" alt="Login System Screen" data-index="3">
+                                <div class="overlay"><span class="zoom-icon">&#128065; Vergrößern</span></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Login System</h3>
+                                <p>Sicheres Login-Interface mit JavaScript Validierung und Session-Management.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Quick Info</h3>
+                    <ul class="info-list">
+                        <li><strong>Name:</strong> Nick Filbert</li>
+                        <li><strong>Fokus:</strong> FISI / Systemintegration</li>
+                        <li><strong>Status:</strong> In Ausbildung (2026)</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-tags">
+                        <span>Linux / Shell</span>
+                        <span>Windows Server</span>
+                        <span>HTML / CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>&copy; 2026 Nick Filbert. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+    <!-- LIGHTBOX MODAL (VOLLBILD ANSICHT) -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <button class="lightbox-btn prev-btn" id="lightboxPrev" aria-label="Vorheriges Bild">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Vorschau Bild">
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-btn next-btn" id="lightboxNext" aria-label="Nächstes Bild">&#10095;</button>
+    </div>
+
+</body>
+</html>
